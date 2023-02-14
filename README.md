@@ -88,3 +88,7 @@ The chat server will parse the user's **message** for commands. Currently suppor
         - Returns: User123 tests out the chat system using /me.
 
     * \* \[Message\]  - Alias for /me
+    
+    UML Diagram:
+    
+    ![image](https://user-images.githubusercontent.com/32446183/218651661-73b81c77-169f-4586-be6c-55d42f4bce62.png)
