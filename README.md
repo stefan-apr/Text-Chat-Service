@@ -20,7 +20,8 @@ incoming event: 'message' :
 * role      - The user's in-game role. Currently supported roles are Player and GM. Unrecognized roles default to Player
 * game_id   - The unique ID of the lobby the user is in
 
-> socket.emit('message', {
+> 
+    socket.emit('message', {
 
     'game_id': '5142246',
 
@@ -42,7 +43,8 @@ outgoing event: 'message' :
 
 Output is a plain String; the message for the client to print to the players.
 
-> socket.on('message', (msg) => {
+> 
+    socket.on('message', (msg) => {
 
     console.log(msg); // GeeHaus: I am sending a test message a player might send. It will be attributed to me as speech.
 
@@ -55,7 +57,8 @@ outgoing event: 'err' :
 * user_name - The in-game name of the user who will need to receive the error message
 * errMsg    - The error message that the server is responding with
 
-> socket.on('err', (err) => {
+> 
+    socket.on('err', (err) => {
 
     console.log(err.user_name, err.errMsg); // GeeHaus, Unknown command. Try /help to see a list of all available commands
 
